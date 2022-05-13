@@ -7,7 +7,7 @@ let samsungGalaxy10 = new Mobile("Samsung Galaxy 10","Galaxy 10","Samsung",260,"
 console.log(Nokia3210);
 
 Nokia3210.setNokia(true,4);
-console.log(Nokia3210);
+iPhone3G.caracteristicas()
 
 
 
