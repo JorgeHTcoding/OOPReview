@@ -1,6 +1,8 @@
 import { Mobile } from "./reto1";
 
-class MobileLibrary {
+
+
+export class MobileLibrary {
 
     private name:string;
     private location:string;
@@ -12,6 +14,7 @@ class MobileLibrary {
     this.name = name;
     this.location = location;
     this.mobiles = mobiles;
+    this.totalPrice;
 
 }
  public setName(name:string):void{
@@ -47,10 +50,10 @@ public getTotalPrice():number{
 return this.totalPrice
 }
 
-public totalPriceCalculation(){
-    for(let i = 0; i <this.mobiles.length; i++ ){
-        
-    }
-}
-
+public totalPriceCalculation(mobiles:Mobile[]):number{    
+     let precio:number = 0;    
+    for(let i = 0; i < mobiles.length; i++ ){    
+        precio +=  mobiles[i].getPrice()
+        } return precio
+ } 
 }
