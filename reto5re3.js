@@ -1,0 +1,15 @@
+"use strict";
+exports.__esModule = true;
+var reto1_1 = require("./reto1");
+var reto1re3_1 = require("./reto1re3");
+var Nokia3210 = new reto1_1.Mobile("Nokia", "3210", "Nokia Networks", 10, "Blue", false, 0, 50);
+var iPhone3G = new reto1_1.Mobile("IPhone3g", "3G", "Apple", 128, "Silver", true, 3, 600);
+var samsungGalaxy10 = new reto1_1.Mobile("Samsung Galaxy 10", "Galaxy 10", "Samsung", 260, "Negro", true, 3, 900);
+var huaweiP50pro = new reto1_1.Mobile("Huawei P50 pro", "P50 pro", "Huawei", 182, "Dorado", true, 4, 850);
+var arrayMobiles = [Nokia3210, iPhone3G, samsungGalaxy10, huaweiP50pro];
+var libreriaMobile = new reto1re3_1.MobileLibrary("Liberia Móviles", "El Patio de mi Casa", arrayMobiles);
+console.log(libreriaMobile.totalPriceCalculation(arrayMobiles));
+libreriaMobile.setLocation("Uzbekiztan");
+libreriaMobile.setName("Liberia Dromedarios de competición");
+libreriaMobile.setMobiles([iPhone3G, samsungGalaxy10, huaweiP50pro, Nokia3210]);
+console.log(libreriaMobile);
