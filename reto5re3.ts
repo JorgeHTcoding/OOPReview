@@ -13,9 +13,13 @@ let arrayMobiles = [Nokia3210,iPhone3G,samsungGalaxy10,huaweiP50pro];
 let libreriaMobile = new MobileLibrary("Liberia Móviles" , "El Patio de mi Casa" , arrayMobiles)
 
 
-console.log(libreriaMobile.totalPriceCalculation(arrayMobiles))
+
 
 libreriaMobile.setLocation("Uzbekiztan")
 libreriaMobile.setName("Liberia Dromedarios de competición")
 libreriaMobile.setMobiles([iPhone3G,samsungGalaxy10,huaweiP50pro,Nokia3210])
-console.log(libreriaMobile)
+console.log(libreriaMobile);
+
+
+
+
