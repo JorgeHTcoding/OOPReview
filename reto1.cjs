@@ -65,14 +65,14 @@ var Mobile = /** @class */ (function () {
         this.cameraNumber = camaraNumber;
     };
     Mobile.prototype.caracteristicas = function () {
-        console.log("The characteristics of the mobile name are: " + "\n" + "\n"
+        "The characteristics of the mobile name are: " + "\n" + "\n"
             + '\uD83D\uDC04 ' + "Name: " + this.name + "\n"
             + '\uD83D\uDC04 ' + "Model: " + this.model + "\n"
             + '\uD83D\uDC04 ' + "Trademark: " + this.trademark + "\n"
             + '\uD83D\uDC04 ' + "SD Size (GB): " + this.sdSize + "\n"
             + '\uD83D\uDC04 ' + "Color: " + this.color + "\n"
             + '\uD83D\uDC04 ' + "Is 5g: " + this.is5g + "\n"
-            + '\uD83D\uDC04 ' + "Number of Cameras: " + this.cameraNumber + "\n");
+            + '\uD83D\uDC04 ' + "Number of Cameras: " + this.cameraNumber;
     };
     return Mobile;
 }());
