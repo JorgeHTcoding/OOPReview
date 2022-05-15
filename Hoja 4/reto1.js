@@ -48,20 +48,12 @@ var Punto = /** @class */ (function () {
     Punto.prototype.calcularMasCercano = function (puntos) {
         var masCercaAun;
         for (var i = 1; i < puntos.length; i++) {
+            //poner siempre i-1 cuando estemos comparando con el valor anterior ya que no es un valor fijo e itera en cada iteración de for
             if (this.calcularDistancia(puntos[i]) < this.calcularDistancia(puntos[i - 1])) {
                 masCercaAun = puntos[i];
             }
         }
         return masCercaAun;
-        // let closestPoint;
-        // if(puntos.length > 0){
-        //     let firstPoint = this.calcularDistancia(puntos[0])    
-        //     closestPoint = puntos[0]      
-        // for(let i = 0; i < puntos.length; i++){
-        //     let closerPoint = this.calcularDistancia(puntos[i])
-        // if(closerPoint < firstPoint){
-        //     closerPoint = closestPoint;
-        //     closestPoint = puntos[i]
     };
     return Punto;
 }());
