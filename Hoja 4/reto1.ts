@@ -57,18 +57,18 @@ export class Punto {
                 return 4          
             }
         
-        public calcularMasCercano(puntos:Punto[]):Punto{
+      public calcularMasCercano(puntos:Punto[]):Punto{
 
            let masCercaAun:Punto;
+           let pos1 = this.calcularDistancia(puntos[0]);                      
            for(let i = 1; i < puntos.length; i++){
-               //poner siempre i-1 cuando estemos comparando con el valor anterior ya que no es un valor fijo e itera en cada iteración de for
-            if(this.calcularDistancia(puntos[i]) < this.calcularDistancia(puntos[i-1])){
-                masCercaAun = puntos[i]                              
-              }
-            } return masCercaAun  
-
-         
+              //como empieza en 1 almazenamos la posición 0 en una variable y hacemos que primero nos la comprueba y después siga con el resto
+            if(pos1 <  this.calcularDistancia(puntos[i])){                
+                masCercaAun = puntos[0]              
+                 //poner siempre i-1 cuando estemos comparando con el valor anterior ya que no es un valor fijo e itera en cada iteración de for             
+              }if(this.calcularDistancia(puntos[i]) < pos1 && this.calcularDistancia(puntos[i]) < this.calcularDistancia(puntos[i-1]))
+              masCercaAun = puntos[i]
+            } return masCercaAun          
 
             }
             }
-           
