@@ -78,10 +78,10 @@ export class Mobile{
             this.cameraNumber = camaraNumber;
      }
     
-     public caracteristicas(){
-                
-            return "These are all my mobiles: " + "\n" + "\n" +
-                        "The characteristics of the mobile "+ this.name + " are: " + "\n" + "\n"                          
+  public caracteristicas(){
+                       
+
+        console.log("The characteristics of the mobile name are: " + "\n" + "\n"
             + '\uD83D\uDC04 ' + "Name: " + this.name + "\n"
             + '\uD83D\uDC04 ' + "Model: " + this.model + "\n"
             + '\uD83D\uDC04 ' + "Trademark: " + this.trademark + "\n"
@@ -89,13 +89,14 @@ export class Mobile{
             + '\uD83D\uDC04 ' + "Color: " + this.color + "\n"
             + '\uD83D\uDC04 ' + "Is 5g: " + this.is5g + "\n"
             + '\uD83D\uDC04 ' + "Number of Cameras: " + this.cameraNumber + "\n"
+        )
             
-            
+
 
     }
 
     
-         }
+}
 
          
          
